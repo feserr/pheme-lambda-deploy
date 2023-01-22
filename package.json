@@ -1,0 +1,34 @@
+{
+  "name": "pheme-auth-deploy",
+  "version": "1.0.0",
+  "description": "Pheme lambda deploy tool",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "deploy": "cdk deploy",
+    "destroy": "cdk destroy",
+    "synth": "cdk synth",
+    "bootstrap": "cdk bootstrap"
+  },
+  "author": {
+    "name": "Elias Serrano",
+    "url": "https://github.com/feserr/pheme-lambda-deploy",
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^10.17.26",
+    "aws-cdk": "^2.59.0",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigateway": "^1.49.1",
+    "@aws-cdk/aws-events": "*",
+    "@aws-cdk/aws-events-targets": "*",
+    "@aws-cdk/aws-lambda": "*",
+    "@aws-cdk/aws-s3-assets": "^1.46.0",
+    "@aws-cdk/core": "*",
+    "dotenv-flow": "^3.2.0"
+  }
+}
